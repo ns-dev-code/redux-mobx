@@ -14,4 +14,12 @@ const embolden = string => string.bold();
 const makeLouderAndBoldAndRepeatThreeTimes = compose(
     embolden, repeatThreeTimes, makeLouder
 )
-console.log(makeLouderAndBoldAndRepeatThreeTimes('hello'))
+console.log(makeLouderAndBoldAndRepeatThreeTimes('hello'));
+
+const reducer = (state, action) => {
+    return state;
+}
+
+const store = createStore(reducer);
+
+console.log(store)
